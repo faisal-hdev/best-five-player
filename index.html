@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -210,7 +210,7 @@
                 id="player-price"
                 type="text"
                 placeholder="$0"
-                class="input input-bordered w-24 max-w-xs h-8"
+                class="input input-bordered w-24 text-black max-w-xs h-8"
               />
             </div>
             <div class="card-actions">
@@ -232,7 +232,7 @@
                 id="manager-cost"
                 type="text"
                 placeholder="$0"
-                class="input input-bordered w-24 max-w-xs h-8"
+                class="input input-bordered w-24 max-w-xs h-8 text-black"
               />
             </div>
             <div class="flex mb-3">
@@ -241,7 +241,7 @@
                 id="coach-cost"
                 type="text"
                 placeholder="$0"
-                class="input input-bordered w-24 max-w-xs h-8"
+                class="input input-bordered w-24 max-w-xs h-8 text-black"
               />
             </div>
             <div class="card-actions">
@@ -251,7 +251,9 @@
               >
                 Calculate Total
               </button>
-              <p class="text-xl">Total : $<span id="total-amount">0</span></p>
+              <p class="text-xl">
+                Total Amount : $<span id="total-amount">0</span>
+              </p>
             </div>
           </div>
         </div>
