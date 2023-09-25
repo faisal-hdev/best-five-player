@@ -1,6 +1,6 @@
 const ulContainer = document.getElementById("ul-container");
 let ulChildren = 0;
-let x = 0;
+let setToOtherFunction = 0;
 
 document.getElementById("lio-messi").addEventListener("click", function () {
   const cardNameElement = document.getElementById("card-name").innerText;
@@ -28,7 +28,7 @@ document
     const playerExpenses = parseFloat(playerExpensesElementString);
 
     const currentPrice = playerExpenses + playerPriceEqual;
-    x = currentPrice;
+    setToOtherFunction = currentPrice;
 
     playerExpensesElement.innerText = currentPrice;
     playerPriceElement.value = "";
@@ -56,7 +56,8 @@ document
     const totalAmountElementString = totalAmountElement.innerText;
     const previousTotalAmount = parseFloat(totalAmountElementString);
 
-    const totalAmount = previousTotalAmount + managerCoachAmount + x;
+    const totalAmount =
+      previousTotalAmount + managerCoachAmount + setToOtherFunction;
 
     totalAmountElement.innerText = totalAmount;
     managerCostElement.value = "";
