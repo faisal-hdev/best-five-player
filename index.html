@@ -32,9 +32,7 @@
     </style>
   </head>
   <body class="bg-gray-700">
-    <header
-      class="w-full mx-auto bg-black flex justify-center items-center h-96"
-    >
+    <header class="w-full bg-black flex justify-center items-center h-[480px]">
       <div class="m-auto">
         <h1 class="text-6xl text-center text-orange-600 header-title">
           Select Your Best Five Players -
@@ -65,14 +63,19 @@
             />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title text-white text-2xl mt-3">Lionel Messi</h2>
+            <h2 id="card-name" class="card-title text-white text-2xl mt-3">
+              Lionel Messi
+            </h2>
             <div class="flex m-auto gap-4 text-white p-4">
               <p>36 Goals</p>
               <span>:</span>
               <p>120 Assist</p>
             </div>
             <div class="card-actions">
-              <button class="btn glass text-white px-12 hover:bg-gray-700">
+              <button
+                id="lio-messi"
+                class="btn glass text-white px-12 hover:bg-gray-700"
+              >
                 Select
               </button>
             </div>
@@ -81,7 +84,7 @@
         <div class="bg-gray-800 rounded-lg">
           <figure class="rounded-md">
             <img
-              src="https://cdn.theathletic.com/app/uploads/2022/11/20180515/neymar-1-scaled-e1668987073617.jpg"
+              src="https://dailytrust.com/wp-content/uploads/2022/12/Neymar.jpg"
               alt="Shoes"
               class="rounded-xl"
             />
@@ -103,7 +106,7 @@
         <div class="bg-gray-800 rounded-lg">
           <figure class="rounded-md">
             <img
-              src="https://theanalyst.com/wp-content/uploads/2023/06/kylian-mbappe-main-image.jpg"
+              src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2Fc173061e-39e1-11ee-81cd-1bf34cc855cb.jpg?crop=4456%2C2971%2C0%2C0"
               alt="Shoes"
               class="rounded-xl"
             />
@@ -123,8 +126,11 @@
           </div>
         </div>
         <div class="bg-gray-800 rounded-lg">
-          <h2 class="text-white text-center mt-8 text-2xl">Selected -</h2>
-          <!-- <p class="text-white text-xl ml-10 mt-8">1: Lionel Messi</p> -->
+          <h2 class="text-white text-center mt-8 text-2xl mb-4">Selected</h2>
+          <ul
+            id="ul-container"
+            class="list-decimal ml-14 text-white text-xl"
+          ></ul>
         </div>
       </div>
       <div class="grid grid-cols-4 gap-6 mt-8 w-10/12 mx-auto">
@@ -199,43 +205,55 @@
           <div class="card-body text-white">
             <h2 class="card-title m-auto text-2xl mb-4">Budget</h2>
             <div class="flex mb-3">
-              <p class="text-xl">Per Player</p>
-              <p class="text-right text-xl">$1000</p>
+              <p class="text-xl">Per Player Price</p>
+              <input
+                id="player-price"
+                type="text"
+                placeholder="$0"
+                class="input input-bordered w-24 max-w-xs h-8"
+              />
             </div>
             <div class="card-actions">
-              <button class="btn glass text-white px-12 hover:bg-gray-700">
+              <button
+                id="budget-calculate"
+                class="btn glass text-white px-12 hover:bg-gray-700"
+              >
                 Calculate
               </button>
-              <p class="text-xl">Player Expenses : $0</p>
+              <p class="text-xl">
+                Player Expenses : $<span id="player-expenses">0</span>
+              </p>
             </div>
           </div>
-
           <div class="card-body text-white">
-            <div class="flex mb-3">
-              <p class="text-xl">Manager</p>
-              <p class="text-right text-xl pl-6">$200</p>
+            <div class="flex mb-">
+              <p class="text-xl">Manager Cost</p>
+              <input
+                id="manager-cost"
+                type="text"
+                placeholder="$0"
+                class="input input-bordered w-24 max-w-xs h-8"
+              />
             </div>
             <div class="flex mb-3">
-              <p class="text-xl">Coach</p>
-              <p class="text-right text-xl pl-6">$400</p>
+              <p class="text-xl">Coach Cost</p>
+              <input
+                id="coach-cost"
+                type="text"
+                placeholder="$0"
+                class="input input-bordered w-24 max-w-xs h-8"
+              />
             </div>
             <div class="card-actions">
-              <button class="btn glass text-white px-8 hover:bg-gray-700">
+              <button
+                id="calculate-Total"
+                class="btn glass text-white px-8 hover:bg-gray-700"
+              >
                 Calculate Total
               </button>
-              <p class="text-xl">Total : <span>$0</span></p>
+              <p class="text-xl">Total : $<span id="total-amount">0</span></p>
             </div>
           </div>
-
-          <!-- <div class="card-body text-white">
-            <p class="text-xl">Per Player</p>
-            <p class="border-2 border-white-600 text-xl px-5 py-2">$1000</p>
-            <div class="card-actions">
-              <button class="btn glass text-white px-12 hover:bg-gray-700">
-                Calculate
-              </button>
-            </div>
-          </div> -->
         </div>
       </div>
       <div class="grid grid-cols-4 gap-6 mt-8 w-10/12 mx-auto">
@@ -360,7 +378,7 @@
             />
           </figure>
           <div class="card-body items-center text-center">
-            <h2 class="card-title text-white text-2xl mt-3">DI MARIA</h2>
+            <h2 class="card-title text-white text-2xl mt-3">Di Maria</h2>
             <div class="flex m-auto gap-4 text-white p-4">
               <p>36 Goals</p>
               <span>:</span>
@@ -383,5 +401,7 @@
         </p>
       </div>
     </footer>
+
+    <script src="./js/player.js"></script>
   </body>
 </html>
