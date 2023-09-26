@@ -16,10 +16,6 @@ document
     const playerPriceElement = document.getElementById("player-price");
     const playerPriceElementString = playerPriceElement.value;
     const playerPrice = parseFloat(playerPriceElementString);
-    if (isNaN(playerPrice)) {
-      alert("Please provide a valid number");
-      return;
-    }
 
     const playerPriceEqual = playerPrice * ulChildren;
 
@@ -29,6 +25,12 @@ document
 
     const currentPrice = playerExpenses + playerPriceEqual;
     setToOtherFunction = currentPrice;
+
+    if (isNaN(playerPrice)) {
+      alert("Please provide a valid number");
+      playerPriceElement.value = "";
+      return;
+    }
 
     playerExpensesElement.innerText = currentPrice;
     playerPriceElement.value = "";
@@ -40,11 +42,6 @@ document
     const managerCostElement = document.getElementById("manager-cost");
     const managerCostElementString = managerCostElement.value;
     const managerCost = parseFloat(managerCostElementString);
-
-    if (isNaN(managerCost)) {
-      alert("Please provide a valid number");
-      return;
-    }
 
     const coachCostElement = document.getElementById("coach-cost");
     const coachCostElementString = coachCostElement.value;
@@ -58,6 +55,13 @@ document
 
     const totalAmount =
       previousTotalAmount + managerCoachAmount + setToOtherFunction;
+
+    if (isNaN(managerCost) || isNaN(coachCost)) {
+      alert("Please provide a valid number");
+      managerCostElement.value = "";
+      coachCostElement.value = "";
+      return;
+    }
 
     totalAmountElement.innerText = totalAmount;
     managerCostElement.value = "";
