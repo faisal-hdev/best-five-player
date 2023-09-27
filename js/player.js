@@ -11,6 +11,9 @@ document.getElementById("lio-messi").addEventListener("click", function () {
 
   const btn = document.getElementById("lio-messi");
   btn.disabled = true;
+  if (ulChildren >= 5) {
+    return alert("You have already best selected five plyers");
+  }
 });
 
 document.getElementById("neymar-jr").addEventListener("click", function () {
@@ -22,6 +25,9 @@ document.getElementById("neymar-jr").addEventListener("click", function () {
 
   const btn = document.getElementById("neymar-jr");
   btn.disabled = true;
+  if (ulChildren >= 5) {
+    return alert("You have already best selected five plyers");
+  }
 });
 
 document.getElementById("kylian-mbappé").addEventListener("click", function () {
@@ -35,6 +41,9 @@ document.getElementById("kylian-mbappé").addEventListener("click", function () 
 
   const btn = document.getElementById("kylian-mbappé");
   btn.disabled = true;
+  if (ulChildren >= 5) {
+    return alert("You have already best selected five plyers");
+  }
 });
 
 document
@@ -50,6 +59,9 @@ document
 
     const btn = document.getElementById("renato-sanches");
     btn.disabled = true;
+    if (ulChildren >= 5) {
+      return alert("You have already best selected five plyers");
+    }
   });
 
 document
@@ -65,6 +77,9 @@ document
 
     const btn = document.getElementById("cristiano-ronaldo");
     btn.disabled = true;
+    if (ulChildren >= 5) {
+      return alert("You have already best selected five plyers");
+    }
   });
 
 document.getElementById("sergio-ramos").addEventListener("click", function () {
@@ -78,6 +93,9 @@ document.getElementById("sergio-ramos").addEventListener("click", function () {
 
   const btn = document.getElementById("sergio-ramos");
   btn.disabled = true;
+  if (ulChildren >= 5) {
+    return alert("You have already best selected five plyers");
+  }
 });
 
 document
@@ -93,6 +111,9 @@ document
 
     const btn = document.getElementById("vinícius-júnior");
     btn.disabled = true;
+    if (ulChildren >= 5) {
+      return alert("You have already best selected five plyers");
+    }
   });
 
 document.getElementById("thiago-silva").addEventListener("click", function () {
@@ -106,6 +127,9 @@ document.getElementById("thiago-silva").addEventListener("click", function () {
 
   const btn = document.getElementById("thiago-silva");
   btn.disabled = true;
+  if (ulChildren >= 5) {
+    return alert("You have already best selected five plyers");
+  }
 });
 
 document.getElementById("dani-alves").addEventListener("click", function () {
@@ -119,6 +143,9 @@ document.getElementById("dani-alves").addEventListener("click", function () {
 
   const btn = document.getElementById("dani-alves");
   btn.disabled = true;
+  if (ulChildren >= 5) {
+    return alert("You have already best selected five plyers");
+  }
 });
 
 document.getElementById("thiago-almada").addEventListener("click", function () {
@@ -132,6 +159,9 @@ document.getElementById("thiago-almada").addEventListener("click", function () {
 
   const btn = document.getElementById("thiago-almada");
   btn.disabled = true;
+  if (ulChildren >= 5) {
+    return alert("You have already best selected five plyers");
+  }
 });
 
 document.getElementById("Ronaldo").addEventListener("click", function () {
@@ -144,6 +174,9 @@ document.getElementById("Ronaldo").addEventListener("click", function () {
 
   const btn = document.getElementById("Ronaldo");
   btn.disabled = true;
+  if (ulChildren >= 5) {
+    return alert("You have already best selected five plyers");
+  }
 });
 
 document.getElementById("di-maria").addEventListener("click", function () {
@@ -156,6 +189,9 @@ document.getElementById("di-maria").addEventListener("click", function () {
 
   const btn = document.getElementById("di-maria");
   btn.disabled = true;
+  if (ulChildren >= 5) {
+    return alert("You have already best selected five plyers");
+  }
 });
 
 document
