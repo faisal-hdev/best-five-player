@@ -3,25 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="./images/fav-icon.png"
-      type="image/x-icon"
+    <link rel="shortcut icon" href="./images/fav-icon.png" type="image/x-icon"
     />
     <!-- Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400&display=swap"
-      rel="stylesheet"
-    />
-
+      rel="stylesheet" />
     <!-- daisyUI 3.7.7 CSS file + Tailwind CSS CDN script: -->
     <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css"
-      rel="stylesheet"
-      type="text/css"
-    />
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Best five players</title>
 
@@ -34,10 +26,10 @@
   <body class="bg-gray-700">
     <header class="w-full bg-black flex justify-center items-center h-[480px]">
       <div class="m-auto">
-        <h1 class="text-6xl text-center text-orange-600 header-title">
+        <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-orange-600 header-title">
           Select Your Best Five Players -
         </h1>
-        <p class="text-center text-2xl mt-8 text-white">
+        <p class="text-center text-sm  sm:text-lg md:text-xl lg:text-2xl mt-8 text-white">
           Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
           sint. <br />
           Velit officia consequat duis enim velit mollit. Exercitation veniam
@@ -53,14 +45,10 @@
       </div>
     </header>
     <main class="mb-20 container mx-auto">
-      <section
-        class="flex flex-col md:flex-row gap-6 justify-center container mx-auto mt-10"
-      >
+      <section class="flex flex-col md:flex-row gap-6 justify-center container mx-auto mt-10">
         <!-- player card -->
         <div>
-          <div
-            class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-items-center gap-8 mt-8 container mx-auto"
-          >
+          <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-items-center gap-8 mt-8 container mx-auto" >
             <div class="bg-gray-800 rounded-lg w-[278px]">
               <figure class="rounded-md">
                 <img
@@ -80,7 +68,7 @@
                 </div>
                 <div class="card-actions">
                   <button
-                    id="lio-messi"
+                    onclick="handleSelect(this)"
                     class="btn glass text-white px-12 hover:bg-gray-700"
                   >
                     Select
@@ -107,7 +95,7 @@
                 </div>
                 <div class="card-actions">
                   <button
-                    id="neymar-jr"
+                    onclick="handleSelect(this)"
                     class="btn glass text-white px-12 hover:bg-gray-700"
                   >
                     Select
@@ -137,7 +125,7 @@
                 </div>
                 <div class="card-actions">
                   <button
-                    id="kylian-mbappé"
+                    onclick="handleSelect(this)"
                     class="btn glass text-white px-12 hover:bg-gray-700"
                   >
                     Select
@@ -168,7 +156,7 @@
                 </div>
                 <div class="card-actions">
                   <button
-                    id="renato-sanches"
+                    onclick="handleSelect(this)"
                     class="btn glass text-white px-12 hover:bg-gray-700"
                   >
                     Select
@@ -197,7 +185,7 @@
                 </div>
                 <div class="card-actions">
                   <button
-                    id="cristiano-ronaldo"
+                    onclick="handleSelect(this)"
                     class="btn glass text-white px-12 hover:bg-gray-700"
                   >
                     Select
@@ -227,7 +215,7 @@
                 </div>
                 <div class="card-actions">
                   <button
-                    id="sergio-ramos"
+                    onclick="handleSelect(this)"
                     class="btn glass text-white px-12 hover:bg-gray-700"
                   >
                     Select
@@ -258,7 +246,7 @@
                 </div>
                 <div class="card-actions">
                   <button
-                    id="vinícius-júnior"
+                    onclick="handleSelect(this)"
                     class="btn glass text-white px-12 hover:bg-gray-700"
                   >
                     Select
@@ -288,7 +276,7 @@
                 </div>
                 <div class="card-actions">
                   <button
-                    id="thiago-silva"
+                    onclick="handleSelect(this)"
                     class="btn glass text-white px-12 hover:bg-gray-700"
                   >
                     Select
@@ -318,7 +306,7 @@
                 </div>
                 <div class="card-actions">
                   <button
-                    id="dani-alves"
+                    onclick="handleSelect(this)"
                     class="btn glass text-white px-12 hover:bg-gray-700"
                   >
                     Select
@@ -349,7 +337,7 @@
                 </div>
                 <div class="card-actions">
                   <button
-                    id="thiago-almada"
+                    onclick="handleSelect(this)"
                     class="btn glass text-white px-12 hover:bg-gray-700"
                   >
                     Select
@@ -379,7 +367,7 @@
                 </div>
                 <div class="card-actions">
                   <button
-                    id="Ronaldo"
+                    onclick="handleSelect(this)"
                     class="btn glass text-white px-12 hover:bg-gray-700"
                   >
                     Select
@@ -409,7 +397,7 @@
                 </div>
                 <div class="card-actions">
                   <button
-                    id="di-maria"
+                    onclick="handleSelect(this)"
                     class="btn glass text-white px-12 hover:bg-gray-700"
                   >
                     Select
